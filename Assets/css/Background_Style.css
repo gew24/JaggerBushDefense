@@ -1,0 +1,673 @@
+
+*{
+    box-sizing: border-box;
+}
+
+
+/********************************* PAGE 1 Title Screen ************************/
+
+
+
+#main{
+    text-align: center;
+    background-image: url(../images/blackorchid.jpg);
+    /*textured background image from - http://subtlepatterns.com/blach-orchid/*/
+    color: #29A9E0;
+    font-size: 25px;
+    font-family: Fontif;   
+    border:#ef4361;
+    border-left: 5em;
+    z-index: -1;
+}
+
+#mainbody{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: -1;
+}
+
+nav{ /* style for the navigation buttons*/
+    font-size: 1em;
+    position: fixed;
+    color: #111111;
+    width: 99%;
+    z-index: 1;
+}
+a:-webkit-any-link{
+    color: #ef4361;
+    text-decoration: underline;
+    cursor: auto;    
+    margin-right: 1em;
+}
+a:hover{
+    color: #29A9E0;
+}
+#navigation{
+    position: fixed;
+    z-index: 1;
+    width: 99%;
+    background-image: url(../images/blackorchid.jpg);
+    /*background-color: #b22222;*/
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    right: 10%;
+    align-items: center;
+    color: #29A9E0;
+    top: 0%;
+}
+#background{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 98%;
+    background-image: url(../images/Mom_Range.jpg);
+    background-size: cover;
+    opacity: 0.2;
+}
+#page_title{
+    padding-top: 15%;
+    color: #ef4361;
+    font-size: 5em;
+    font-family: 'Ruthie', cursive;  
+    z-index: 1;
+}
+.bigText{
+    padding-top: 15%;
+    color: #B22222;
+    font-family: 'Ruthie', cursive;    
+    z-index: 1;
+}
+#main_logo{
+    width: 50%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 25%;
+}  
+#subtitle{
+    padding-top: 7%;
+    color: #ef4361;
+    font-size: 2.5em;
+    font-family: 'Ruthie', cursive;
+}
+#container_titlepage{
+    margin-bottom: 20em;
+}
+
+
+
+
+
+
+
+/********************** PAGE 2 Store Front *****************************/
+
+
+
+
+
+
+#inlineimages{
+    background-color:#111111;
+    width: 85%;
+    position: relative;
+    z-index: 1;
+}
+#productsForm{
+    width: 100%;
+}
+figure{
+    border:#29A9E0;
+    border-style:solid;
+    border-width: 0.01em;
+    height: 39em;
+    /*padding-left: 2%;*/
+    text-align: left;
+    content: center;
+    /*margin-right: 1em;*/
+}
+#btnCart{
+    width: 2.9em;
+    height: 2.5em;
+    background-color: #111111;
+    background-image: url(../images/shoppingCartDark.png);
+    background-size: cover;
+    position: fixed;
+    top: 3.5em;
+    left: 3%;
+    z-index: 1;
+    border-radius: 20%;
+}
+#count_cart{
+    position: fixed;
+    top: 6.1em;
+    left: 3%;
+}
+#cartButtonText{
+    position: fixed;
+    top: 5em;
+    left: 92%;
+    z-index: 1;
+}
+#btnTable{
+    text-height: 0.2em;
+    width: 2.9em;
+    height: 2.5em;
+    background-color: #111111;
+    background-image: url(../images/Compare_button.png);
+    background-size: cover;
+    position: fixed;
+    top: 0.5em;
+    left: 3%;
+    z-index: 1;
+    border-radius: 20%;
+}
+#itemsInCart{
+    color: #29A9E0;
+    width: 2.9em;
+    background-image: url(../images/blackorchid.jpg);
+    position: fixed;
+    top: 8em;
+    left: 95%;
+    z-index: 1;
+}
+#page2title{
+    font-size: 2em;
+    font-family: 'Ruthie', cursive;
+}
+#title_header{
+    position: relative;
+    color: #29A9E0;
+    font-size: 25px;
+    font-family: Fontif;
+}
+#logo{
+    padding-bottom: 4%;
+}
+.prodImg{
+
+    background-color: #383630;
+    width: 25%;
+    padding: 1% 5% 1% 5%;
+}
+.prodImg{
+    height: 34em;
+    width: 30%;
+    padding-bottom: 1%;
+    text-align: left;
+    display: inline-block;
+    background-color:#111111;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.page2img:hover{
+    position: absolute;
+    width: 20em;
+    height: 20em;
+    border-radius: 10%; 
+    z-index: 1;
+}
+.products{
+    height: 35em;
+    padding-left: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 98%;
+    border-bottom-style: solid;
+    border-bottom-color: #29A9E0;
+}
+
+
+
+
+
+
+
+/***************************PAGE 3 Product Comparison *************************/
+
+
+
+
+
+
+
+
+#table_section{
+    position: relative;
+    width: 85%;
+    margin-top: 5em;    
+}
+#page3title{
+    font-size: 2em;
+    font-family: 'Ruthie', cursive;
+    color: #111111;
+}
+#compTable{
+    overflow-x: auto;  
+    overflow-wrap:break-word; 
+    position: relative;
+    width: 85%;  
+}
+p{
+    width: 90%;
+}
+#comp{
+    background-color: #29A9E0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+}
+tr{
+    /*border:#29A9E0;
+    border-style:solid; 
+    border-width: 0.5em;
+    width: 25%;*/
+}
+td{
+    border:#29A9E0;
+    border-style:solid;
+    border-width: 0.01em;
+    width: 25%;
+    color:#111111;
+}
+#compDesc{
+    width: 75%;
+}
+.tableProdName{
+    width: 10%;
+    text-align: left;
+    padding-left: 0.5%;
+}
+.tableProdDesc{
+    text-align: left;
+    padding-left: 0.5%;
+}
+.tableProdMat{
+    width: 10%;
+    text-align: left;
+    padding-left: 0.5%;
+}
+.tableProdSize{
+    width: 10%;
+    text-align: left;
+    padding-left: 0.5%;
+}
+.tableProdPrice{
+    width: 12%;
+    text-align: left;
+    padding-left: 0.5%;
+}
+
+
+
+
+
+
+/*********************** FOOTER *****************************/
+footer{
+    position: relative;
+    background-image: url(../images/blackorchid.jpg);
+    color: #ef4361;
+    width: 99%;
+    height: 12em;
+    z-index: -1;
+    margin-top: 5em; 
+}
+#footTitle{
+    font-size: 2em;
+    font-family: 'Ruthie', cursive;
+    width: 50%;
+    position: relative;
+    padding-top: 2em;
+    text-align: center;
+    left:20%;
+}
+.p_footer{
+    position: relative;
+    text-align: center;
+    font-size: 0.5em;
+    z-index: 1;
+}
+
+/*********************************************************** tablet screen size ***************************************/
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    nav{ /* style for the navigation buttons*/
+        font-size: 1em;
+        position: fixed;
+        color: #111111;
+        width: 99%;
+        height: 3em;
+    }
+    a:-webkit-any-link{
+        color: #ef4361;
+        text-decoration: underline;
+        cursor: auto    
+    }
+
+    #navigation{
+        position: fixed;
+        z-index: 1;
+        width: 99%;
+        background-image: url(../images/blackorchid.jpg);
+        /*background-color: #b22222;*/
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        color: #29A9E0;
+        top: 0%;
+    }
+    #main{
+        text-align: center;
+        background-image: url(../images/blackorchid.jpg);
+        /*textured background image from - http://subtlepatterns.com/blach-orchid/*/
+        color: #29A9E0;
+        font-size: 25px;
+        font-family: Fontif;   
+        border:#ef4361;
+        border-left: 5em;
+    }
+    footer{
+        position: relative;
+        background-image: url(../images/blackorchid.jpg);
+        color: #ef4361;
+        width: 99%;
+        height: 12em;
+        z-index: -1;
+        margin-top: 5em; 
+    }
+    #footTitle{
+        font-size: 2em;
+        font-family: 'Ruthie', cursive;
+        width: 50%;
+        position: relative;
+        padding-top: 0.1em;
+        text-align: center;
+        left:20%;
+    }
+    .p_footer{
+        position: relative;
+        text-align: center;
+        font-size: 0.5em;
+        z-index: 1;
+    }
+    #btnCart{
+        width: 2.9em;
+        height: 2.5em;
+        background-color: #111111;
+        background-image: url(../images/shoppingCartDark.png);
+        background-size: cover;
+        position: fixed;
+        top: 2.5em;
+        left: 90%;
+        z-index: 1;
+        border-radius: 20%;
+    }
+    #cartButton{
+        position: fixed;
+        top: 3em;
+        left: 85%;
+    }
+    #btnTable{
+
+        width: 2.9em;
+        height: 2.5em;
+        background-color: #111111;
+        /*background-image: url(../images/shoppingCartDark.png);*/
+        background-size: cover;
+        position: fixed;
+        top: 2.5em;
+        left: 0.1%;
+        z-index: 1;
+        border-radius: 20%;
+    }
+    #comp{
+        overflow:auto;
+        background-color: #29A9E0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 1;
+    }
+
+}
+
+/*********************************************************** Medium Page 1 *****************************************/    
+
+
+
+
+
+@media screen and (max-width: 480px) {
+
+    .toggle-button {
+        position: fixed;
+        width: 44px;
+        height: 40px;
+        padding: 4px;
+        transition: .25s;
+        z-index: 15;
+        right: 3%;
+        top: 3%;
+    }
+    .toggle-button:hover {
+        cursor: pointer;
+    }
+    .toggle-button .menu-bar {
+        position: absolute;
+        border-radius: 2px;
+        width: 80%;
+        transition: .5s;
+    }
+    .toggle-button .menu-bar-top {
+        border: 4px solid #555;
+        border-bottom: none;
+        top: 2%;
+    }
+    .toggle-button .menu-bar-middle {
+        height: 4px;
+        background-color: #555;
+        margin-top: 7px;
+        margin-bottom: 7px;
+        top: 4px;
+    }
+    .toggle-button .menu-bar-bottom {
+        border: 4px solid #555;
+        border-top: none;
+        top: 22px;
+    }
+    #main{
+        text-align: center;
+        background-image: url(../images/blackorchid.jpg);
+        /*textured background image from - http://subtlepatterns.com/blach-orchid/*/
+        color: #29A9E0;
+        font-size: 15px;
+        font-family: Fontif;   
+        border:#ef4361;
+        border-left: 5em;
+    }
+    nav{ /* style for the navigation buttons*/
+        font-size: 2.5em;
+        position: fixed;
+        color: #111111;
+        width: 99%;
+        background-color: #555555;
+        right: 3%;
+    }
+    a:-webkit-any-link{
+        position: relative;
+        z-index: 14;
+        width: 10em;
+        right: 3%;
+        background-color: #333333;
+        color: #ef4361;
+        text-decoration: underline;
+        cursor: auto    
+            
+    }
+
+    #navigation{
+        position: fixed;
+        z-index: 1;
+        width: 99%;
+        /*background-color: blue;*/
+        display: flex;
+        flex-direction: column;
+        /*justify-content: space-around;*/
+        align-items:flex-start;
+        color: #29A9E0;
+        top: 0%;
+        right: 3%;
+    }
+    #inlineimages{
+        z-index: -1;
+    }
+    #btnCart{
+        width: 2.9em;
+        height: 2.5em;
+        background-color: #111111;
+        background-image: url(../images/shoppingCartDark.png);
+        background-size: cover;
+        position: fixed;
+        top: 4.5em;
+        left: 8%;
+        z-index: 1;
+        border-radius: 20%;
+    }
+    #cartButton{
+        position: fixed;
+        top: 3em;
+        left: 85%;
+    }
+    #btnTable{
+        width: 2.9em;
+        height: 2.5em;
+        background-color: #111111;
+        /*background-image: url(../images/shoppingCartDark.png);*/
+        background-size: cover;
+        position: fixed;
+        top: 1.5em;
+        left: 8%;
+        z-index: 1;
+        border-radius: 20%;
+    }
+    .page2img{
+        width: 90%;
+    }
+    footer{
+        position: relative;
+        background-image: url(../images/blackorchid.jpg);
+        color: #ef4361;
+        width: 99%;
+        z-index: -1;
+        margin-top: 1em; 
+        margin-bottom: 1em;
+    }
+    #footTitle{
+        font-size: 2em;
+        font-family: 'Ruthie', cursive;
+        width: 50%;
+        position: relative;
+        padding-top: 0.1em;
+        text-align: center;
+        left:20%;
+    }
+    .p_footer{
+        position: relative;
+        text-align: center;
+        font-size: 0.5em;
+        z-index: 1;
+    }
+
+    #table_section{
+        overflow-y:scroll;
+        position: relative;
+        margin-top: 5em;    
+    }
+    .page3Imgs{
+        width: 100%;
+    }
+    #page3title{
+        font-size: 2em;
+        font-family: 'Ruthie', cursive;
+        color: #111111;
+    }
+    #compTable{
+        overflow-x: auto;  
+        overflow-wrap:break-word; 
+        position: relative; 
+    }
+    #compareItems{
+        width: 100%;
+        height: 75%;
+        overflow-x: auto;
+    }
+    #comp{
+        overflow:auto;
+        background-color: #29A9E0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 1;
+    }
+    td{
+        color:#111111;
+    }
+    /*#compDesc{
+        width: 90%;
+    }*/
+    .col_name{
+        text-align: left;
+        padding-left: 0.5%;
+    }
+    .col_description{
+        width: 4em;
+        text-align: left;
+        padding-left: 0.5%;
+    }
+    .col_material{
+        text-align: left;
+        padding-left: 0.5%;
+    }
+    .col_size{
+        visibility:hidden;
+    }
+    .col_price{
+        text-align: left;
+        padding-left: 0.5%;
+    }
+
+
+}
+
+/**************************************************************/    
+/*.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}*/
+

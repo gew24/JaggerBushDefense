@@ -1,0 +1,337 @@
+
+*{
+    box-sizing: border-box;
+}
+/*body::-webkit-scrollbar-track 
+{
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+        border-radius: 10px;
+        background-color: #ef4361;/*#EF0361;
+}
+body::-webkit-scrollbar
+{
+        width: 12px;
+        background-color: #F5F5F5;
+}
+body::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    background-color: #29A9E0;
+    background-image: -webkit-linear-gradient(90deg,
+        transparent,
+        rgba(9, 5, 5, 0.9) 50%,
+        transparent,
+        transparent)
+}*/
+
+/********************************* PAGE 1 ************************/
+#main{
+    text-align: center;
+    background-image: url(../images/blackorchid.jpg);
+    /*textured background image from - http://subtlepatterns.com/blach-orchid/*/
+    color: #29A9E0;
+    font-size: 25px;
+    font-family: Fontif;   
+    border:#ef4361;
+    border-left: 5em;
+}
+nav{ /* style for the navigation buttons*/
+    font-size: 1em;
+    position: fixed;
+    color: #111111;
+    width: 99%;
+
+}
+a:-webkit-any-link{
+    color: #ef4361;
+    text-decoration: underline;
+    cursor: auto    
+}
+a:hover{
+    color: #29A9E0;
+}
+.navigation{
+    position: fixed;
+    z-index: 1;
+    width: 99%;
+    background-image: url(../images/blackorchid.jpg);
+    /*background-color: #b22222;*/
+    color: #29A9E0;
+    top: 0%;
+}
+#background{
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 98%;
+    background-image: url(../images/Mom_Range.jpg);
+    background-size: cover;
+    opacity: 0.2;
+}
+#page_title{
+    padding-top: 7%;
+    color: #ef4361;
+    font-size: 5em;
+    font-family: 'Ruthie', cursive;  
+}
+.bigText{
+    padding-top: 15%;
+    color: #B22222;
+    font-family: 'Ruthie', cursive;    
+}
+#main_logo{
+    width: 50%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 25%;
+}  
+#subtitle{
+    padding-top: 7%;
+    color: #ef4361;
+    font-size: 2.5em;
+    font-family: 'Ruthie', cursive;
+}
+#container_titlepage{
+    margin-bottom: 20em;
+}
+
+
+
+
+
+
+
+/********************** PAGE 2 *****************************/
+
+
+
+
+
+
+
+#page2title{
+    font-size: 2em;
+    font-family: 'Ruthie', cursive;
+}
+#title_header{
+    position: relative;
+    color: #29A9E0;
+    font-size: 25px;
+    font-family: Fontif;
+}
+#logo{
+    padding-bottom: 4%;
+}
+.inlineimages{
+    background-color:#111111;
+    width: 85%;
+    position: absolute;
+    left: 7%;
+}
+.prodImg{
+
+    background-color: #383630;
+    width: 25%;
+    padding: 1% 5% 1% 5%;
+}
+.prodImg{
+    height: 34em;
+    width: 30%;
+    padding-bottom: 1%;
+    text-align: left;
+    display: inline-block;
+    background-color:#111111;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.page2Imgs:hover{
+    width: 18em;
+    height: 40em;
+}
+.products{
+    height: 35em;
+    padding-left: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 98%;
+    border-bottom-style: solid;
+    border-bottom-color: #29A9E0;
+}
+
+
+
+
+
+
+
+/***************************PAGE 3****************************/
+
+
+
+
+
+
+#page3title{
+    color: #111111;
+    font-size: 2em;
+    font-family: 'Ruthie', cursive;
+}
+#compTable{
+    overflow-x: auto;  
+    overflow-wrap:break-word; 
+    position: relative;
+    width: 100%;  
+}
+p{
+    width: 90%;
+}
+#comp{
+    background-color: #29A9E0;
+    color:#111111;
+    margin-top: 211em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    z-index: 1;
+}
+tr{
+    /*border:#29A9E0;
+    border-style:solid; 
+    border-width: 0.5em;
+    width: 25%;*/
+}
+td{
+    background-color: #29A9E0;
+    border:#29A9E0;
+    border-style:solid;
+    border-width: 0.01em;
+    width: 25%;
+    color:#111111;
+}
+#compDesc{
+    width: 75%;
+}
+.tableProdName{
+    width: 10%;
+    text-align: left;
+    padding-left: 0.5%;
+}
+.tableProdDesc{
+    text-align: left;
+    padding-left: 0.5%;
+}
+.tableProdMat{
+    width: 10%;
+    text-align: left;
+    padding-left: 0.5%;
+}
+.tableProdSize{
+    width: 10%;
+    text-align: left;
+    padding-left: 0.5%;
+}
+.tableProdPrice{
+    width: 12%;
+    text-align: left;
+    padding-left: 0.5%;
+}
+
+
+
+
+
+
+/*********************** FOOTER *****************************/
+#page_footer{
+    position: absolute;
+    background-image: url(../images/blackorchid.jpg);
+    color: #ef4361;
+    width: 99%;
+    height: 12em;
+    z-index: -1;
+    margin-top: 5em; 
+}
+#footTitle{
+    font-size: 2em;
+    font-family: 'Ruthie', cursive;
+    width: 50%;
+    position: relative;
+    padding-top: 2em;
+    text-align: center;
+    left:20%;
+}
+.p_footer{
+    position: relative;
+    text-align: center;
+    font-size: 0.5em;
+    z-index: 1;
+}
+
+
+
+/***********************************************  Client UI *****************************************/
+
+#uploader{
+    text-align: left;
+    background-image: url(../images/blackorchid.jpg);
+    /*textured background image from - http://subtlepatterns.com/blach-orchid/*/
+    color: #29A9E0;
+    font-size: 25px;
+    font-family: Fontif;   
+    border:#ef4361;
+    border-left: 5em;
+    width: 50%;
+}
+textarea{
+    width: 25%;
+    height: 100px;
+    background-color:#000000;
+    color: #ef4361;
+    padding: 5px;
+}
+.update_text{
+    position: relative;
+    left: 1%;
+    width: 95%;
+    background-color:#111111;
+    color: #ef4361;
+    padding: 5px;
+    font-size: .5em;
+}
+#upload_product{
+    width: 11%;
+    background-color:buttonface;
+    color:#111111;
+}
+#file{
+    width: 11%;
+    /*background-color:buttonface;*/
+    color:#cccccc;
+    border-style:solid;
+    border-color: #29A9E0;
+    border-width: 0.01em;
+    margin-bottom: 1em;
+}
+
+/**************************************************************/    
+/*.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}*/
+

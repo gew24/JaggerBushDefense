@@ -1,0 +1,54 @@
+Grant Wescott
+Jaggerbush Defense 
+Project Description
+
+	I designed and created an e-commerce site for a client who
+sells concealed carry purses and women's self-defense items.
+I designed this site for User-centered Design class(IS 1052),
+and created the functionality for Web Programming (IS 1059).
+
+	The first feature/service of this site is the ability to 
+add products to the site through a non-public facing interface, 
+and to have them appear on the public facing site dynamically.
+There is a file upload function that was a blast to learn. The 
+file is sent to a folder named uploads on the server and the 
+file name is sent to the database to reference the file name 
+on the server and render the image. The newly added products 
+will a default status of active. If a product's status is changed
+to inactive in the inventory control feature the product will
+not appear on the public facing side of the website.
+
+	The second service of the site is an inventory control
+feature. The user is able to search through a list of the 
+items in inventory(records in the database)	and select a
+product to view by typing or copying and pasting the product
+sku into the text field, this is not the ideal way to handle
+this and I intend to make each product a link and eliminate.
+the text field to make it easier to use. Once the user has
+selected a product they can make any desired modifications 
+to the cost, price, quantity on hand, active/inactive status
+of the product, and product dimensions. The product dimensions
+field was added when I realized that I had forgotten it. I want to 
+eventually change the actie/inactive to radio buttons instead 
+text field since there are only two options, but I didn't have 
+enough time to implement this change. 
+
+	The third service is a shopping cart. The user can add
+items to the cart and view what products they are purchasing, 
+the price of each item, and the total price. I am going to add 
+the function of creating a new order and proceeding to checkout.
+they can remove items individually, or empty the entire cart from 
+there, they also have to the option to continue shopping if they 
+would like to I will have to connect to a card services api and/or
+paypal api, but that costs money so it will wait until closer to 
+'go live' time.
+
+	The fourth and final service is similar to the shopping cart. 
+The last service is a product comparison feature that allows the
+user to add products to a table to compare them side by side. 
+Items can be removed individually or the whole table can be emptied
+all at once. 
+
+	There many other features that I wanted to add to the application, 
+but I was beginning to get scope creap and had to focus on design 
+over features. I hope you enjoy the site. 

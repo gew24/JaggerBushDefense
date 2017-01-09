@@ -1,0 +1,147 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 28, 2016, 10:03:23 PM
+    Author     : anger_000
+*/
+
+#main{
+    text-align: center;
+    background-image: url(../images/blackorchid.jpg);
+    /*textured background image from - http://subtlepatterns.com/blach-orchid/*/
+    color: #29A9E0;
+    font-size: 25px;
+    font-family: Fontif;   
+    border:#ef4361;
+    border-left: 5em;
+    display: flex;
+    flex-direction: column;
+}
+#background{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 98%;
+    background-image: url(../images/Mom_Range.jpg);
+    background-size: cover;
+    opacity: 0.2;
+}
+#cartTitle{
+    font-size: 2em;
+    font-family: 'Ruthie', cursive;
+}
+.cartrow{
+    border-bottom: solid;
+    border-bottom-color: #ef4361;
+    border-bottom-width: 2px;
+}
+td{
+    width: 4em;
+}
+.col_remove{
+    max-width: 5em;
+}
+.cart_item{
+    display: flex;
+    flex-direction: row;
+}
+.col_image{
+    max-width: 2em;
+}
+.col_price{
+    max-width: 3em;
+    text-align: left;
+}
+.col_qty{
+    max-width: 3em;
+    text-align: left;
+    border-image: url(../images/blackorchid.jpg);
+}
+.cartImg{
+    height: 2em;
+    width: 2em;
+    float: left;
+}
+.remove{
+    width: 55%;
+    float: left;
+}
+#txtQty{
+    width:50%;
+    text-align: center;
+}
+#btnClear{
+    position: absolute;
+    left: 2%;
+    top: .2em;
+}
+input{
+    background-image: url(../images/blackorchid.jpg);
+    /*textured background image from - http://subtlepatterns.com/blach-orchid/*/
+    color: #ef4361;
+}
+
+/*********************** FOOTER *****************************/
+footer{
+    position: relative;
+    background-image: url(../images/blackorchid.jpg);
+    color: #ef4361;
+    width: 99%;
+    height: 12em;
+    z-index: -1;
+    margin-top: 5em; 
+}
+#footTitle{
+    font-size: 2em;
+    font-family: 'Ruthie', cursive;
+    width: 50%;
+    position: relative;
+    padding-top: 2em;
+    text-align: center;
+    left:20%;
+    margin-left: 1.6em;
+}
+.p_footer{
+    position: relative;
+    text-align: center;
+    font-size: 0.5em;
+    z-index: 1;
+}
+
+
+
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+#btnClear{
+    position: absolute;
+    left: 60%;
+    top: 20em;
+    height: 4em;
+    width: 2em;
+    flex-wrap:wrap;
+}
+    
+    
+}   
+
+
+/******************************************************************************/
+
+@media screen and (max-width: 480px) {
+.col_qty{
+    max-width: 3em;
+    text-align: right;
+    border-image: url(../images/blackorchid.jpg);
+}
+#btnClear{
+    position: relative;
+    left: 2%;
+    top: 2%;
+    /*height: 2em;
+    width: 4em;*/
+    flex-wrap:wrap;
+}
+}
